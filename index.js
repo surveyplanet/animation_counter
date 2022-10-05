@@ -6,9 +6,13 @@
  * @param {options} options desc
  * @return {type} priomise desc
  * @example
- * import 'func' from '@surveyplanet/animation_counter'
+ * import 'animationCounter' from '@surveyplanet/animation_counter'
  */
 const animationCounter = (el, options = {}) => {
+	if (Object.prototype.toString.call(el) === '[object String]') {
+		el = document.querySelector(el);
+	}
+
 	options = {
 		...{
 			startVal: 0,
