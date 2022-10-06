@@ -42,10 +42,10 @@ This animationCounter function will count up from start value to end value with 
 import 'animationCounter' from '@surveyplanet/animation_counter
 animationCounter(el, {
     startVal: 5,
-   endVal: 1000000,
-  interval: 1,
-step: 3000,
-localize: 'de-DE',
+    endVal: 1000000,
+    interval: 1,
+    step: 3000,
+    localize: 'de-DE',
 });
 ```
 
