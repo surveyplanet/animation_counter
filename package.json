@@ -1,37 +1,32 @@
 {
     "name": "@surveyplanet/animation_counter",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Animates a number in the DOM by counting up or down.",
     "main": "index.js",
     "module": "index.js",
     "type": "module",
-    "scripts":
-    {
+    "scripts": {
         "test": "./node_modules/.bin/mocha tests",
         "lint": "./node_modules/.bin/prettier --debug-check *.js */**.js"
     },
-    "repository":
-    {
+    "repository": {
         "type": "git",
         "url": "git+https://github.com/surveyplanet/animation_counter.git"
     },
     "keywords": [],
     "author": "Ognjen Ugljenovic <ugljenovic.ognjen@gmail.com>",
     "license": "MIT",
-    "bugs":
-    {
+    "bugs": {
         "url": "https://github.com/surveyplanet/animation_counter/issues"
     },
     "homepage": "https://github.com/surveyplanet/animation_counter#readme",
-    "devDependencies":
-    {
+    "devDependencies": {
         "chai": "^4.3.6",
         "jsdom": "^20.0.0",
         "mocha": "^10.0.0",
         "prettier": "^2.7.1"
     },
-    "directories":
-    {
+    "directories": {
         "test": "tests"
     }
 }
