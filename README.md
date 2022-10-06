@@ -19,17 +19,22 @@ import MyModule from '@surveyplanet/animation_counter';
 
 <a name="animationCounter"></a>
 
-## animationCounter(el, options) ⇒ <code>Promise</code>
+## animationCounter(el, options, step, startVal, endVal, interval, localize) ⇒ <code>Promise</code>
 
 This animationCounter function will count up from start value to end value with a given interval and step. Use it to animate a number.
 
 **Kind**: global function  
 **Returns**: <code>Promise</code> - Resolves when the animation is complete.
 
-| Param   | Type                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| el      | <code>HTMLElement</code> | the element you want to update. It can be a string as well as a number.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| options | <code>options</code>     | Use options to pass in the start value, end value, interval, step, and localize. The default values are startVal: 0, endVal: 100, interval: 0, step: 30. Localize does not have a default value, meaning that the number displayed won't have any periods or commas. If you want to localize the number, pass in the language code as a string. For example, 'en-us' for US English, 'de-de' for German, 'fr-fr' for French, etc. Interval will be in milliseconds and is the time between each step. Step is the amount that the number will increase by each time interval. |
+| Param    | Type                          | Description                                                                                                                            |
+| -------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| el       | <code>HTMLElement</code>      | the element you want to update. It can be a string as well as a number.                                                                |
+| options  | <code>options</code>          | Use options to pass in the start value, end value, interval, step, and localize.                                                       |
+| step     | <code>options.step</code>     | The amount that the number will increase by each time interval.                                                                        |
+| startVal | <code>options.startVal</code> | The number that the counter will start at.                                                                                             |
+| endVal   | <code>options.endVal</code>   | The number that the counter will end at.                                                                                               |
+| interval | <code>options.interval</code> | The time between each step.                                                                                                            |
+| localize | <code>options.localize</code> | The language code for the number to be localized to. For example, 'en-us' for US English, 'de-de' for German, 'fr-fr' for French, etc. |
 
 **Example**
 
