@@ -8,7 +8,7 @@
  * @param {options.startVal} startVal The number that the counter will start at.
  * @param {options.endVal} endVal The number that the counter will end at.
  * @param {options.interval} interval The time between each step.
- * @param {options.localize} localize The language code for the number to be localized to. For example, 'en-us' for US English, 'de-de' for German, 'fr-fr' for French, etc.
+ * @param {options.localize} localize The language code for the number to be localized to. For example, 'en-us' for US English, 'de-de' for German, 'fr-fr' for French, etc. The default for this parameter is empty, meaning that your dots and comas won't be displayed at all. Leave this empty if you want the number to be displayed as is.
  * @return {Promise} Resolves when the animation is complete.
  * @example
  * import 'animationCounter' from '@surveyplanet/animation_counter
