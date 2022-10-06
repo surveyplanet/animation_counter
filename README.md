@@ -34,7 +34,7 @@ This animationCounter function will count up from start value to end value with 
 | startVal | <code>options.startVal</code> | The number that the counter will start at.                                                                                             |
 | endVal   | <code>options.endVal</code>   | The number that the counter will end at.                                                                                               |
 | interval | <code>options.interval</code> | The time between each step.                                                                                                            |
-| localize | <code>options.localize</code> | The language code for the number to be localized to. For example, 'en-us' for US English, 'de-de' for German, 'fr-fr' for French, etc. |
+| localize | <code>options.localize</code> | The language code for the number to be localized to. For example, 'en-US' for US English, 'de-DE' for German, 'fr-FR' for French, etc. |
 
 **Example**
 
@@ -45,7 +45,7 @@ animationCounter(el, {
    endVal: 1000000,
   interval: 1,
 step: 3000,
-localize: 'de-de',
+localize: 'de-DE',
 });
 ```
 
