@@ -21,10 +21,6 @@ import MyModule from '@surveyplanet/animation_counter';
 
 ## animationCounter(el, options) ⇒ <code>type</code>
 
-<a name="animationCounter"></a>
-
-## animationCounter(el, options) ⇒ <code>type</code>
-
 This animationCounter function will count up from start value to end value with a given interval and step. Use it to animate a number.
 
 **Kind**: global function  
