@@ -4,7 +4,7 @@
  * @method animationCounter
  * @param {HTMLElement} el the element you want to update. It can be a string as well as a number.
  * @param {options} options Use options to pass in the start value, end value, interval, step, and localize. The default values are startVal: 0, endVal: 100, interval: 0, step: 30. Localize does not have a default value, meaning that the number displayed won't have any periods or commas. If you want to localize the number, pass in the language code as a string. For example, 'en-us' for US English, 'de-de' for German, 'fr-fr' for French, etc. Interval will be in milliseconds and is the time between each step. Step is the amount that the number will increase by each time interval.
- * @return {type} Promise that resolves when the animation is complete.
+ * @return {Promise} Resolves when the animation is complete.
  * @example
  * import 'animationCounter' from '@surveyplanet/animation_counter
  * animationCounter(el, {
