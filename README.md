@@ -49,15 +49,13 @@ localize: 'de-de',
 });
 ```
 
-**Example**
+**Returns**
 
-```js
 This returns count from 0 to 1.000.000 with a step of 3000 that updates every 1 millisecond.
-```
 
 ## Testing
 
 ```bash
 npm install
-npm test
+npm run test
 ```
