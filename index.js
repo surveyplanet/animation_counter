@@ -52,10 +52,11 @@ const animationCounter = (el, options = {}) => {
 	options.endVal = Number(options.endVal);
 	options.interval = Number(options.interval);
 	options.step = Number(options.step);
+	el.textContent = localize(options.startVal, options.localize);
 
 	return new Promise((resolve, reject) => {
 		if (options.interval === 0) {
-			el.textContent = options.endVal;
+			el.textContent = localize(options.endVal, options.localize);
 			return resolve();
 		}
 
@@ -63,19 +64,9 @@ const animationCounter = (el, options = {}) => {
 
 		const counter = setInterval(() => {
 			count += options.step;
-			el.textContent =
-				options.localize && options.localize.length
-					? Intl.NumberFormat(options.localize, {
-							maximumSignificantDigits: 3,
-					  }).format(count)
-					: count;
+			el.textContent = localize(count, options.localize);
 			if (count >= options.endVal) {
-				let endVal =
-					options.localize && options.localize.length
-						? Intl.NumberFormat(options.localize, {
-								maximumSignificantDigits: 3,
-						  }).format(options.endVal)
-						: options.endVal;
+				let endVal = localize(options.endVal, options.localize);
 
 				el.textContent = endVal;
 
@@ -86,5 +77,15 @@ const animationCounter = (el, options = {}) => {
 		});
 	});
 };
+
+function localize(value, localize) {
+	if (!localize || !localize.length) {
+		return value;
+	}
+
+	return Intl.NumberFormat(localize, {
+		maximumSignificantDigits: 3,
+	}).format(value);
+}
 
 export default animationCounter;
