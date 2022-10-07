@@ -1,6 +1,6 @@
 {
     "name": "@surveyplanet/animation_counter",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Animates a number in the DOM by counting up or down.",
     "main": "index.js",
     "module": "index.js",
